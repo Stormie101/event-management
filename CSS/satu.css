@@ -1,0 +1,71 @@
+*{ 
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
+
+.logo img{
+    height: 150px;
+}
+
+header a{
+    text-decoration: none;
+    color: #333;
+    font-size:40px;
+    border-bottom: 2px solid black;
+}
+
+#topic1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#topic2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+#topicIMG{
+    width: 550px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+#topicBut{
+    border: 1px solid rgb(47, 240, 116);
+    background-color: rgb(47, 245, 116);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+#topicBut:hover{
+    background-color: rgb(66, 255, 129);
+    border-color: rgb(66, 255, 129);
+}
+
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+}

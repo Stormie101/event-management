@@ -1,0 +1,80 @@
+*{ 
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+/* #poli{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 80px;
+}
+
+#team-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+} */
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    max-width: 500px;
+}
+
+.imagess{
+width: 40%;
+}
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#desc {
+    text-align: center;
+}
+
+/* Main Paragraph Styling */
+.main {
+    text-align: center; /* Center the content inside the div */
+}
+
+/* Main Styling for Centering */
+.main {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    height: 80vh; /* Make the div take up the full height of the viewport */
+}
+
+/* Main Paragraph Styling */
+.main p {
+    padding: 10px 20px; /* Adjust padding for spacing between text and border */
+    margin: 10px 0; /* Adjust margin to space out paragraphs */
+    border: 2px solid #000;
+    border-radius: 15px; /* Optional: Adjust the border-radius to your liking */
+    width: 500px; /* Ensure the border fits closely around the text */
+    font-weight: 500;
+
+    text-decoration: none;
+    background-color: rgb(2, 129, 214); 
+    color: white; 
+    border-color:rgb(2, 129, 214) ;
+}
+
+.main p:hover{
+    background-color:rgb(2, 147, 243) ;
+    border-color:rgb(2, 147, 243) ;
+}
+
+.main a{
+    text-decoration: none;
+}
