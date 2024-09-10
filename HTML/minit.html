@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minit mesyuarat</title>
+    <link rel="stylesheet" href="../CSS/minit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../image/logo-event-management.jpg" alt="">
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="">Minit Mesyuarat</a>
+        </div>
+    </header>
+
+    <p id="heads">Pilih Mesyuarat :</p>
+
+    <!-- Dropdown menu for selecting the meeting -->
+    <div class="select-container">
+        <select id="mesyuaratSelect">
+            <option value="mesyuarat1">Mesyuarat 1</option>
+            <option value="mesyuarat2">Mesyuarat 2</option>
+            <option value="mesyuarat3">Mesyuarat 3</option>
+            <option value="mesyuarat4">Mesyuarat 4</option>
+        </select>
+    </div>
+
+    <!-- Download button -->
+    <div class="download-container">
+        <button id="downloadBtn">Download Minit</button>
+    </div>
+
+    <script>
+        // Add event listener to the download button
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // Get the selected meeting value
+            const selectedMesyuarat = document.getElementById('mesyuaratSelect').value;
+
+            // Define the file path based on the selection
+            let filePath;
+            if (selectedMesyuarat === 'mesyuarat1') {
+                filePath = '../PDF-FILE/MINIT-MESYUARAT-KALI-PERTAMA.pdf';
+            } else if (selectedMesyuarat === 'mesyuarat2') {
+                filePath = '../PDF-FILE/MINIT-MESYUARAT-KALI-KEDUA.pdf';
+            } else if (selectedMesyuarat === 'mesyuarat3') {
+                filePath = '../PDF-FILE/MINIT-MESYUARAT-KALI-KETIGA.pdf';
+            } else if (selectedMesyuarat === 'mesyuarat4') {
+                filePath = '../PDF-FILE/MINIT-MESYUARAT-KALI-KEEMPAT.pdf';
+            }
+
+            // Create a temporary anchor element to trigger the download
+            const link = document.createElement('a');
+            link.href = filePath;
+            link.download = filePath.split('/').pop();  // Get the file name from the filePath
+            document.body.appendChild(link);
+            link.click();
+
+            // Remove the anchor element after downloading
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
