@@ -4,26 +4,9 @@
 }
 
 body{
-   
-        background-color: #f07676;
-    background-image: linear-gradient(62deg, #f07676 0%, #00e3ff 100%);
-    
-    
+    background-color: #f07676;
+    background-image: linear-gradient(62deg, #f07676 0%, #00e3ff 100%);   
 }
-/* #poli{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    width: 80px;
-}
-
-#team-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-} */
 
 table{
     margin-left: auto;
@@ -85,3 +68,29 @@ width: 40%;
 .main a{
     text-decoration: none;
 }
+
+/* mobile view */
+@media (max-width: 768px) {
+    table{
+        margin-top: 10px;
+    }
+    .imagess{
+        width: 60%;
+    }
+    #poli{
+        width: 65%;
+    }
+    #title{
+        font-size: 32px;
+    }
+    #desc{
+        font-size: 15px;
+    }
+    .main{
+        height: 75vh;
+    }
+    .main p{
+        font-size: 15px;
+        width: 300px;
+    }
+    }
